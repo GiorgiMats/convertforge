@@ -1,0 +1,28 @@
+.section-trusted-container {
+    padding-top: 80px;
+    display: grid;
+    grid-gap: 52px;
+}
+
+.trusted-item-container {
+    padding: 24px;
+    border-radius: 12px;
+    background-color: #F9F9FF;
+    display: grid;
+    grid-gap: 12px;
+}
+
+.trusted-item-container svg {
+    width: 32px;
+}
+
+.trusted-item-container svg path,
+.trusted-item-container svg ellipse {
+    stroke: var(--main-blue);
+}
+
+.section-trusted-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+}

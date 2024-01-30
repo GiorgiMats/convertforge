@@ -1,0 +1,72 @@
+.section-our-offer {
+    background-color: var(--main-black);
+    padding: 64px 0;
+}
+
+.section-our-offer-container {
+    display: grid;
+    grid-gap: 52px;
+}
+
+.section-our-offer h2,
+.section-our-offer .h3 {
+    font-weight: 400;
+    color: var(--white);
+}
+
+.section-our-offer .h3 {
+    text-align: center;
+}
+
+.section-our-offer .divide-line {
+    background-color: #FFFFFF1A;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.section-our-offer-main {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 24px;
+}
+
+.offer-item-container {
+    background-color: #FFFFFF0D;
+    padding: 32px;
+    border-radius: 12px;
+}
+
+.offer-item-price-container {
+    display: grid;
+    grid-gap: 16px;
+}
+
+.offer-item-price-container p {
+    text-align: center;
+}
+
+.offer-item-perkz-container {
+    display: grid;
+    grid-gap: 16px;
+    margin: 32px 0;
+}
+
+.offer-item-perkz-p {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 8px;
+    justify-content: start;
+}
+
+.offer-item-perkz-p svg {
+    width: 17px;
+}
+
+.offer-item-perkz-p .svg-fill path {
+    fill: var(--main-blue);
+}
+
+.offer-item-perkz-p .svg-stroke path {
+    stroke: var(--main-blue);
+}

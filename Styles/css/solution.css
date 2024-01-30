@@ -1,0 +1,28 @@
+.section-best-solution {
+    margin: 120px 0;
+}
+
+.section-best-solution-container {
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-gap: 126px; */
+    align-items: center;
+    grid-template-columns: 5fr 1fr 6fr;
+}
+
+.best-solution-right-container img {
+    width: 100%;
+    height: auto;
+}
+
+.best-solution-left-container .p-subheading {
+    margin-bottom: 12px;
+}
+
+.best-solution-left-container .h2 {
+    margin-bottom: 24px;
+}
+
+.best-solution-left-container .p1-5 {
+    margin-bottom: 32px;
+}
