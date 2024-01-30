@@ -1,0 +1,113 @@
+.section-header-inside {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section-header-right-container {
+    justify-self: end;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 32px;
+}
+
+.header-navigation {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 24px;
+}
+
+.header-navigation a:hover {
+    text-decoration: underline;
+    color: var(--main-black);
+}
+
+.header-navigation a {
+    color: var(--black-1);
+    transition: 0.2s ease-in-out;
+}
+
+.section-hero-container {
+    background-color: #F9F9FF;
+    height: 95vh;
+}
+
+.section-hero {
+    padding-top: 52px;
+    display: grid;
+    justify-content: center;
+}
+
+.hero-text-container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 16px;
+}
+
+.hero-text-container h1,
+.hero-text-container p {
+    text-align: center;
+}
+
+.hero-text-container h1 {
+    max-width: 792px;
+}
+
+.hero-text-container p {
+    max-width: 588px;
+    color: var(--black-1);
+}
+
+.upload-file-icon path {
+    stroke: var(--main-black);
+    stroke-width: 1.2;
+    transition: 0.15s ease-in-out;
+}
+
+/* Convert Box */
+
+.hero-convert-container {
+    padding-top: 32px;
+}
+
+.convert-box {
+    max-width: 588px;
+    width: 100%;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px dashed rgba(46, 40, 250, 0.50);
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+.convert-box:hover {
+    transform: scale(1.05);
+}
+
+.convert-box:hover .upload-file-icon path {
+    stroke: var(--main-blue);
+}
+
+.upload-file-icon {
+    margin-bottom: 16px;
+}
+
+.convert-box .h2 {
+    margin-bottom: 8px;
+}
+
+.convert-button-container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 32px;
+    width: 100%;
+}
