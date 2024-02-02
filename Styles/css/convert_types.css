@@ -1,0 +1,40 @@
+.section-convert-types {
+    padding-top: 80px;
+}
+
+.section-convert-types-container {
+    display: grid;
+    grid-gap: 52px;
+}
+
+.section-convert-types-main {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 24px;
+    justify-content: center;
+}
+
+.convert-type-item-container {
+    background-color: #F9F9FF;
+    padding: 32px;
+    border-radius: 12px;
+    display: grid;
+    justify-content: center;
+    grid-gap: 32px;
+}
+
+.convert-images-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.convert-images-container svg {
+    width: 24px;
+}
+
+.convert-images-container svg path {
+    stroke: var(--main-black);
+}

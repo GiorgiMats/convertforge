@@ -26,3 +26,35 @@
 .best-solution-left-container .p1-5 {
     margin-bottom: 32px;
 }
+
+@media only screen and (max-width: 1023px) {
+    .section-best-solution-container {
+        grid-auto-flow: row;
+        grid-template-columns: unset;
+        /* grid-template-rows: 1fr 32px 1fr; */
+        grid-gap: 16px;
+    }
+
+    .best-solution-left-container {
+        order: 3;
+    }
+
+    .section-best-solution-container .divider {
+        order: 2;
+    }
+
+    .best-solution-right-container {
+        order: 1;
+    }
+}
+
+@media only screen and (max-width: 608px) {
+    .section-best-solution {
+        margin: 52px 0;
+    }
+
+    .best-solution-left-container .p-subheading {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+}

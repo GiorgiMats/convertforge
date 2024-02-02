@@ -28,6 +28,8 @@
     display: grid;
     grid-auto-flow: column;
     grid-gap: 24px;
+    max-width: 996px;
+    margin: auto;
 }
 
 .offer-item-container {
@@ -69,4 +71,34 @@
 
 .offer-item-perkz-p .svg-stroke path {
     stroke: var(--main-blue);
+}
+
+@media only screen and (max-width: 1023px) {
+    .section-our-offer {
+        padding: 52px 0;
+    }
+
+    .section-our-offer-container {
+        grid-gap: 40px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .section-our-offer-main {
+        grid-auto-flow: row;
+        grid-gap: 16px;
+    }
+
+    .offer-item-container {
+        padding: 24px;
+    }
+
+    .section-our-offer .divide-line {
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+
+    .offer-item-perkz-container {
+        margin: 24px 0;
+    }
 }

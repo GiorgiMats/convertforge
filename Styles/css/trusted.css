@@ -26,3 +26,21 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 24px;
 }
+
+@media only screen and (max-width: 1025px) {
+    .section-trusted-main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 608px) {
+    .section-trusted-container {
+        padding-top: 52px;
+        grid-gap: 32px;
+    }
+
+    .section-trusted-main {
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+    }
+}
