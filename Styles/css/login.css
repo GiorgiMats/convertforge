@@ -1,0 +1,73 @@
+.login-form {
+    max-width: 486px;
+    min-width: 486px;
+    background-color: rgba(19, 19, 29, 0.03);
+    padding: 32px;
+    padding-bottom: 61px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.section-login-main {
+    padding: 32px 0 120px 0;
+    display: grid;
+    justify-content: center;
+}
+
+.login-form .btn-primary {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.form-item-checkmark {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+
+.checkmark-item {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 8px;
+}
+
+.form-item-checkmark p a {
+    text-decoration: underline;
+}
+
+.section-footer-absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media only screen and (max-width: 608px) {
+    .login-form {
+        min-width: unset;
+        max-width: unset;
+        width: 100%;
+    }
+
+    .section-login-main {
+        justify-content: stretch;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .login-form {
+        padding: 24px;
+        padding-bottom: 53px;
+    }
+}
+
+@media only screen and (max-width: 359px) {
+    .form-item-checkmark {
+        grid-auto-flow: row;
+        grid-gap: 12px;
+        justify-content: center;
+    }
+}

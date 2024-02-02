@@ -313,6 +313,19 @@ button a {
     text-align: center;
 }
 
+.breadcrumbs {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    padding: 52px 0 24px 0;
+    grid-gap: 4px;
+    align-items: center;
+}
+
+#section-faq-unique {
+    padding-top: 0;
+}
+
 @media only screen and (max-width: 608px) {
     .h1 {
         font-size: 32px;
@@ -332,5 +345,9 @@ button a {
 
     .section-heading {
         grid-gap: 8px;
+    }
+
+    .breadcrumbs {
+        padding-top: 32px;
     }
 }

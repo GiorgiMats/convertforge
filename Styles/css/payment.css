@@ -1,0 +1,246 @@
+.payment-body {
+    background-color: rgba(46, 40, 250, 0.03);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.section-payment {
+    padding: 52px 0;
+}
+
+.section-payment-container {
+    display: grid;
+    grid-gap: 32px;
+}
+
+.section-payment-main {
+    max-width: 996px;
+    margin: auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 24px;
+    grid-template-columns: auto 1fr;
+}
+
+.payment-form {
+    padding: 32px;
+    background-color: var(--white);
+    border-radius: 12px;
+    display: grid;
+    grid-gap: 24px;
+    max-width: 486px;
+}
+
+#pamount-main {
+    color: var(--main-blue);
+    justify-self: end;
+}
+
+.payment-form-header {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 24px;
+}
+
+.payment-form-inputs-container {
+    display: grid;
+    grid-gap: 16px;
+}
+
+.pf-input-outer {
+    background-color: rgba(19, 19, 29, 0.03);
+    border: 1px solid rgba(19, 19, 29, 0.05);
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 16px;
+    grid-template-columns: auto 1fr;
+    border-radius: 8px;
+}
+
+.pf-input-outer svg {
+    width: 19px;
+}
+
+.pf-input-outer .svg-holder {
+    padding: 16px;
+    padding-right: 0;
+}
+
+.pf-input-outer svg path,
+.pf-input-outer svg rect,
+.pf-input-outer svg ellipse {
+    stroke: var(--main-black);
+}
+
+.pf-input-outer .input {
+    background: none;
+    border: none;
+    outline: none;
+    font-family: "Stolzl";
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.pf-input-outer:focus-within {
+    outline: 1px solid var(--black-2);
+}
+
+.payment-form-item {
+    display: grid;
+    grid-gap: 8px;
+}
+
+.month-cvv-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.secure-checkout-circle {
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-blue);
+    border-radius: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.secure-checkout-circle svg {
+    width: 20px;
+}
+
+.secure-checkout-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 12px;
+    align-items: center;
+}
+
+.checkmark-item {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 8px;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+}
+
+.payment-item-checkmark {
+    margin-top: 16px;
+}
+
+label {
+    padding-bottom: 0;
+}
+
+input {
+    margin-top: 0;
+    padding: 0;
+}
+
+.btn-green a {
+    background-color: var(--main-green);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.btn-green a:hover {
+    background-color: #149839;
+}
+
+.converted-product-container {
+    display: grid;
+    justify-items: center;
+    grid-gap: 8px;
+    align-items: start;
+    align-content: start;
+}
+
+.payment-main-file-holder {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 32px;
+    display: grid;
+    justify-content: center;
+    grid-gap: 32px;
+}
+
+.payment-due-today-container {
+    display: grid;
+    padding: 32px;
+    grid-gap: 24px;
+    background-color: var(--white);
+    border-radius: 12px;
+}
+
+.totaldue-header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+
+.payment-main-right-container {
+    display: grid;
+    grid-gap: 24px;
+    align-content: start;
+    grid-template-rows: 1fr auto;
+}
+
+@media only screen and (max-width: 864px) {
+    .section-payment-main {
+        grid-auto-flow: row;
+        grid-template-columns: unset;
+    }
+
+    .payment-form {
+        max-width: unset;
+    }
+}
+
+@media only screen and (max-width: 608px) {
+    .section-payment-container {
+        grid-gap: 24px;
+    }
+
+    .section-payment {
+        padding: 32px 0;
+    }
+}
+
+@media only screen and (max-width: 464px) {
+    .payment-form {
+        padding: 24px;
+    }
+
+    .pf-input-outer {
+        grid-gap: 8px;
+    }
+
+    .pf-input-outer .svg-holder {
+        padding: 8px;
+    }
+
+    .pf-input-outer .input {
+        font-size: 14px;
+    }
+}
