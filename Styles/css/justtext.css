@@ -1,0 +1,18 @@
+.section-justtext-container {
+    display: grid;
+    grid-gap: 52px;
+    padding-bottom: 120px;
+}
+
+.section-justtext-main section {
+    max-width: 792px;
+    margin: auto;
+    display: grid;
+    grid-gap: 16px;
+    width: 100%;
+}
+
+.section-justtext-main {
+    display: grid;
+    grid-gap: 32px;
+}

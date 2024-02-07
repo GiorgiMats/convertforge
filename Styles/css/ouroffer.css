@@ -36,6 +36,7 @@
     background-color: #FFFFFF0D;
     padding: 32px;
     border-radius: 12px;
+    max-width: 486px;
 }
 
 .offer-item-price-container {
@@ -71,6 +72,34 @@
 
 .offer-item-perkz-p .svg-stroke path {
     stroke: var(--main-blue);
+}
+
+/* SEPERATE PAGE */
+
+.section-offer-seperate {
+    background-color: var(--white);
+    padding-top: 0;
+    padding-bottom: 120px;
+}
+
+.section-offer-seperate .offer-item-container {
+    background-color: rgba(19, 19, 29, 0.03);
+}
+
+.section-offer-seperate h2,
+.section-offer-seperate .h3 {
+    color: var(--main-black);
+    font-weight: 500;
+}
+
+.section-offer-seperate .divide-line {
+    background-color: rgba(19, 19, 29, 0.1);
+}
+
+.section-offer-seperate .offer-item-container .button-container {
+    display: grid;
+    justify-content: center;
+    padding-top: 32px;
 }
 
 @media only screen and (max-width: 1023px) {

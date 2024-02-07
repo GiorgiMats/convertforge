@@ -1,0 +1,151 @@
+.section-dashboard-container {
+    display: grid;
+    grid-gap: 64px;
+    padding-top: 52px;
+    padding-bottom: 120px;
+}
+
+.dashboard-section-heading {
+    display: grid;
+    grid-gap: 24px;
+}
+
+.section-documents {
+    padding-top: 52px;
+}
+
+.section-convert-types {
+    padding-bottom: 120px;
+}
+
+.section-convert-types-container .btn-secondary {
+    justify-self: center;
+}
+
+.dashboard-regular-section {
+    display: grid;
+    grid-gap: 32px;
+}
+
+._32gap {
+    display: grid;
+    grid-gap: 32px;
+}
+
+/* TABLE */
+
+.documents-table {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto;
+    grid-gap: 32px;
+    padding: 0 24px;
+}
+
+.documents-table p {
+    position: relative;
+}
+
+.documents-table .filename-p {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    justify-content: start;
+    grid-gap: 12px;
+}
+
+.documents-table .filename-p img {
+    width: 32px;
+}
+
+.quickactions-p {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    justify-content: start;
+}
+
+.documents-table .quickactions-p .download-svg path {
+    stroke: var(--main-green);
+}
+
+.documents-table .quickactions-p .delete-svg path {
+    fill: var(--main-red);
+}
+
+.documents-table p:nth-child(n):after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 16px);
+    left: 0;
+    bottom: 0;
+    right: -32px;
+    height: 1px;
+    background: rgba(19, 19, 29, 0.1);
+}
+
+.documents-table p:nth-child(5n):after {
+    right: -24px;
+}
+
+.documents-table p:nth-child(5n + 1):after {
+    left: -24px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .documents-table p {
+        display: none;
+    }
+
+    .documents-table .resp-p-visible {
+        display: grid;
+    }
+
+    .documents-table {
+        grid-template-columns: 1fr auto;
+    }
+}
+
+@media only screen and (max-width: 608px) {
+    .documents-table {
+        padding: 0;
+    }
+
+    .documents-table p:nth-child(5n):after {
+        right: 0;
+    }
+
+    .documents-table p:nth-child(5n + 1):after {
+        left: 0;
+    }
+
+    .documents-table .p1-3 {
+        font-size: 14px;
+    }
+
+    .dashboard-section-heading .h4-2 {
+        font-size: 16px;
+    }
+
+    .dashboard-section-heading {
+        grid-gap: 16px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .section-header-right-container {
+        display: none;
+    }
+
+    .hamburger-container {
+        display: block;
+    }
+
+    .logo-black-a svg {
+        width: 118px;
+    }
+
+    .section-header-inside {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
