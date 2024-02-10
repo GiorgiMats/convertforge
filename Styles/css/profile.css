@@ -1,0 +1,133 @@
+.section-profile-header {
+    padding: 52px 0;
+}
+
+.section-profile-header-container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.section-profile-header-container img {
+    margin-bottom: 12px;
+}
+
+.section-profile-header-container h4 {
+    margin-bottom: 8px;
+}
+
+.section-profile-header-container h4,
+.section-profile-header-container p {
+    text-align: center;
+}
+
+.profile-main-box {
+    display: grid;
+    grid-gap: 16px;
+    padding: 24px;
+    border-radius: 12px;
+    align-content: start;
+    background-color: #13131D08;
+}
+
+.pmb-header {
+    display: grid;
+    grid-gap: 16px;
+    align-content: start;
+}
+
+.pmb-main {
+    display: grid;
+    grid-gap: 24px;
+    align-content: start;
+}
+
+.pmb-main form {
+    display: grid;
+    grid-gap: 16px;
+    align-content: start;
+}
+
+.section-profile-main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "a a b b c c"
+        "d d d e e e";
+    grid-gap: 24px;
+}
+
+#pmb-1 {
+    grid-area: a;
+}
+
+#pmb-2 {
+    grid-area: b;
+}
+
+#pmb-3 {
+    grid-area: c;
+}
+
+#pmb-4 {
+    grid-area: d;
+}
+
+#pmb-5 {
+    grid-area: e;
+}
+
+.section-profile-main {
+    padding-bottom: 120px;
+}
+
+.pmb-main-button-container {
+    display: grid;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.pmb-main-buttons-container {
+    display: grid;
+    grid-gap: 16px;
+}
+
+.pmb-main img {
+    justify-self: center;
+}
+
+.pmb-main-stats {
+    display: grid;
+    grid-gap: 24px;
+}
+
+.pmb-main-stats-item {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+
+.pmb-main-stats-item .p1-4 {
+    text-align: right;
+}
+
+.pmb-main .btn-link {
+    justify-self: end;
+}
+
+@media only screen and (max-width: 1023px) {
+    .section-profile-main-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "a b"
+            "c d" "e e";
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section-profile-main-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "a" "b" "c" "d" "e";
+    }
+}

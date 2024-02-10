@@ -309,6 +309,15 @@ button a {
     color: var(--main-blue);
 }
 
+.btn-alert a {
+    background-color: #F156421A;
+    color: #F15642;
+}
+
+.btn-alert a:hover {
+    background-color: #F156424D;
+}
+
 /* HEADING */
 
 .section-heading {
