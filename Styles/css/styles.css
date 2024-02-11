@@ -252,6 +252,7 @@ button a {
     display: block;
     background: none;
     border: none;
+    cursor: pointer;
     outline: none;
     font-family: "Stolzl";
     font-size: 16px;
@@ -318,6 +319,20 @@ button a {
     background-color: #F156424D;
 }
 
+.btn-green a {
+    background-color: var(--main-green);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.btn-green a svg path {
+    stroke: var(--white);
+}
+
+.btn-green a:hover {
+    background-color: #149839;
+}
+
 /* HEADING */
 
 .section-heading {
@@ -342,6 +357,18 @@ button a {
 
 #section-faq-unique {
     padding-top: 0;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.display-grid {
+    display: grid !important;
+}
+
+.display-none {
+    display: none !important;
 }
 
 @media only screen and (max-width: 608px) {

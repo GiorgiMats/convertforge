@@ -158,16 +158,6 @@ input {
     padding: 0;
 }
 
-.btn-green a {
-    background-color: var(--main-green);
-    color: var(--white);
-    cursor: pointer;
-}
-
-.btn-green a:hover {
-    background-color: #149839;
-}
-
 .converted-product-container {
     display: grid;
     justify-items: center;
